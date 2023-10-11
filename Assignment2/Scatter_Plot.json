@@ -1,10 +1,10 @@
 {
     "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
-    "width": 1000,
-    "height": 800,
+    "width": 700,
+    "height": 600,
     "title": "Life Expectancy vs. Birth Rate by Continent",
     "data": {
-      "url": "https://raw.githubusercontent.com/4ryanShah/FIT3179/main/Assignment2/world-data-2023-aryan.csv",
+      "url": "Assignment2/world-data-2023-aryan.csv",
       "format": {"type": "csv"}
     },
     "mark": "circle",
