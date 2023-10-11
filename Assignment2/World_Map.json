@@ -2,7 +2,7 @@
   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
   "width": 800,
   "height": 450,
-  "title": "GDP per Capita in 2023",
+  "title": "Birth Rate by Country in 2023",
   "projection": { "type": "equalEarth" },
   "layer": [
     {
@@ -23,7 +23,7 @@
           "from": {
             "data": { "url": "https://raw.githubusercontent.com/4ryanShah/FIT3179/main/Homework_week9/world-data-2023-aryan.csv" },
             "key": "Country",
-            "fields": ["GDP per Capita"]
+            "fields": ["Birth Rate"]
           }
         }
       ],
@@ -37,11 +37,11 @@
             "domain": [5.9, 46],
             "range": ["#e0ecf4", "#08519c"]
           },
-          "legend": { "title": "GDP per Capita" }
+          "legend": { "title": "Birth Rate" }
         },
         "tooltip": [
           { "field": "properties.NAME", "type": "nominal", "title": "Country" },
-          { "field": "GDP per Capita", "type": "quantitative", "title": "GDP per Capita" }
+          { "field": "Birth Rate", "type": "quantitative", "title": "Birth Rate" }
         ]
       }
     },
