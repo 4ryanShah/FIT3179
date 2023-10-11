@@ -34,7 +34,7 @@
           "type": "quantitative",
           "scale": {
             "type": "linear",
-            "domain": [50, 85],
+            "domain": [53, 84],
             "range": ["#e0ecf4", "#08519c"]
           },
           "legend": { "title": "Life Expectancy" }

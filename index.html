@@ -5,20 +5,23 @@
   <script src="https://cdn.jsdelivr.net/npm/vega@5.20.2"></script>
   <script src="https://cdn.jsdelivr.net/npm/vega-lite@5.1.0"></script>
   <script src="https://cdn.jsdelivr.net/npm/vega-embed@6.17.0"></script>
-  
-  
+
   <!-- CSS file -->
   <link rel="stylesheet" type="text/css" href="index_styles.css" media="all">
-  
+
 </head>
 <body>
-  
-<div id="Assignment2"></div>
+
+<div id="WorldMap"></div>
+<div id="ScatterPlot"></div>
 
 <script type="text/javascript">
+  var spec1 = "Assignment2/World_Map.json";
+  vegaEmbed('#WorldMap', spec1).then(function(result) {
+  }).catch(console.error);
 
-  var spec2 = "Assignment2/World_Map.json";
-  vegaEmbed('#Assignment2', spec2).then(function(result) {
+  var spec2 = "Assignment2/Scatter_Plot.json";
+  vegaEmbed('#ScatterPlot', spec2).then(function(result) {
   }).catch(console.error);
 </script>
 
