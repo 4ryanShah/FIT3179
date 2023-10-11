@@ -37,11 +37,11 @@
             "domain": [5.9, 46],
             "range": ["#e0ecf4", "#08519c"]
           },
-          "legend": { "title": "Birth Rate" }
+          "legend": { "title": "GDP per Capita" }
         },
         "tooltip": [
           { "field": "properties.NAME", "type": "nominal", "title": "Country" },
-          { "field": "Birth Rate", "type": "quantitative", "title": "Birth Rate" }
+          { "field": "GDP per Capita", "type": "quantitative", "title": "GDP per Capita" }
         ]
       }
     },
