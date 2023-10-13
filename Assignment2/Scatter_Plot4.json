@@ -2,9 +2,9 @@
     "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
     "width": 500,
     "height": 400,
-    "title": "Life Expectancy vs. Birth Rate by Continent",
+    "title": "Life Expectancy vs. Out of pocket health expenditure",
     "data": {
-      "url": "https://raw.githubusercontent.com/4ryanShah/FIT3179/main/Assignment2/world-data-2023-aryan.csv",
+      "url": "Assignment2/world-data-2023-aryan.csv",
       "format": {"type": "csv"}
     },
     "selection": {
@@ -23,11 +23,11 @@
         "scale": {"domain": [52, 86], "zero": false}
       },
       "x": {
-        "field": "Birth Rate",
+        "field": "Out of pocket health expenditure",
         "type": "quantitative",
-        "title": "Birth Rate",
-        "scale": {"domain": [4, 48], "zero": false}
-      },
+        "title": "Out of pocket health expenditure",
+        "scale": {"zero": false}
+      },      
       "size": {
         "field": "Population",
         "type": "quantitative",
@@ -59,7 +59,7 @@
     "opacity": {
         "condition": {"selection": "continent_highlight", "value": 0.6},
         "value": 0.2
-            },      
+            },     
         "tooltip": [
             {"field": "Country", "type": "nominal", "title": "Country"},
             {"field": "Population", "type": "quantitative", "title": "Population"},

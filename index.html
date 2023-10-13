@@ -14,6 +14,9 @@
 
 <div id="WorldMap"></div>
 <div id="ScatterPlot"></div>
+<div id="ScatterPlot2"></div>
+<div id="ScatterPlot3"></div>
+<div id="ScatterPlot4"></div>
 
 <script type="text/javascript">
   var spec1 = "Assignment2/World_Map.json";
@@ -22,6 +25,18 @@
 
   var spec2 = "Assignment2/Scatter_Plot.json";
   vegaEmbed('#ScatterPlot', spec2).then(function(result) {
+  }).catch(console.error);
+
+  var spec2 = "Assignment2/Scatter_Plot2.json";
+  vegaEmbed('#ScatterPlot2', spec2).then(function(result) {
+  }).catch(console.error);
+  
+  var spec2 = "Assignment2/Scatter_Plot3.json";
+  vegaEmbed('#ScatterPlot3', spec2).then(function(result) {
+  }).catch(console.error);
+
+  var spec2 = "Assignment2/Scatter_Plot4.json";
+  vegaEmbed('#ScatterPlot4', spec2).then(function(result) {
   }).catch(console.error);
 </script>
 
