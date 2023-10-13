@@ -39,7 +39,7 @@
       "mark": "bar",
       "encoding": {
         "x": {"field": "Continent", "type": "nominal", "axis": {"labelAngle": -45}},
-        "y": {"aggregate": "average", "field": "Gross primary education enrollment (%)", "type": "quantitative", "scale": {"domain": [1, 1.07], "zero": false}},
+        "y": {"aggregate": "average", "field": "Gross primary education enrollment (%)", "type": "quantitative", "scale": {"domain": [0.8, 1.1], "zero": false}},
         "color": {
           "field": "Continent",
           "type": "nominal",

@@ -4,6 +4,13 @@
     "data": {
       "url": "Assignment2/world-data-2023-aryan.csv"
     },
+    "selection": {
+      "continent_highlight": {
+      "type": "multi",
+      "fields": ["Continent"],
+      "bind": "legend"
+      }
+      },
     "mark": {"type": "arc", "innerRadius": 50},
     "encoding": {
       "theta": {"aggregate": "sum", "field": "GDP", "type": "quantitative"},
@@ -29,6 +36,10 @@
         ]
         }
         },
+        "opacity": {
+          "condition": {"selection": "continent_highlight", "value": 0.8},
+          "value": 0.2
+              },  
       "tooltip": [
         { "field": "Continent", "type": "nominal", "title": "Continent" }
       ]

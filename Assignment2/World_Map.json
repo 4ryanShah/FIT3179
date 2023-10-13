@@ -34,7 +34,7 @@
     [80, 30],
     [40, 25]
     ],
-    "labels": ["Default", "Oceania", "South East Asia", "Europe", "Africa", "Central America", "Asia", "Middle East and North Africa"],
+    "labels": ["Centre", "Oceania", "South East Asia", "Europe", "Africa", "Central America", "Asia", "Middle East and North Africa"],
     "name": "Map Centre: "
     }}],
   "layer": [

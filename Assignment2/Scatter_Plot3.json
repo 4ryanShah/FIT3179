@@ -7,6 +7,18 @@
       "url": "Assignment2/world-data-2023-aryan.csv",
       "format": {"type": "csv"}
     },
+    "params": [{
+      "name": "Population_Above",
+      "value": 0,
+      "bind": {
+      "input": "range",
+      "min": 0,
+      "max": 100000000,
+      "step": 1000000,
+      "name": "Minimum Population: "
+      }
+      }],
+    "transform": [{"filter": "datum.Population > Population_Above"}],
     "selection": {
         "continent_highlight": {
         "type": "multi",
@@ -57,7 +69,7 @@
         }
         },
     "opacity": {
-        "condition": {"selection": "continent_highlight", "value": 0.6},
+        "condition": {"selection": "continent_highlight", "value": 0.8},
         "value": 0.2
             },     
         "tooltip": [
