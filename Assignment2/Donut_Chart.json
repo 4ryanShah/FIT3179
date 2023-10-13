@@ -1,0 +1,41 @@
+{
+    "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+    "description": "Donut chart grouped by continent with GDP as the value.",
+    "data": {
+      "url": "Assignment2/world-data-2023-aryan.csv"
+    },
+    "mark": {"type": "arc", "innerRadius": 50},
+    "encoding": {
+      "theta": {"aggregate": "sum", "field": "GDP", "type": "quantitative"},
+      "color": {
+        "field": "Continent",
+        "type": "nominal",
+        "scale": {
+        "domain": [
+        "North America",
+        "South America",
+        "Europe",
+        "Africa",
+        "Asia",
+        "Oceania"
+        ],
+        "range": [
+        "#e41a1c",
+        "#984ea3",
+        "#ff7f00",
+        "#33a02c",
+        "#377eb8",
+        "#a65628"
+        ]
+        }
+        },
+      "tooltip": [
+        { "field": "Continent", "type": "nominal", "title": "Continent" }
+      ]
+    },
+    "title": {
+      "text": "GDP Distribution by Continent",
+      "fontSize": 16
+    }
+  }
+  

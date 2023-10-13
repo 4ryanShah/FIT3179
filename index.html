@@ -17,6 +17,9 @@
 <div id="ScatterPlot2"></div>
 <div id="ScatterPlot3"></div>
 <div id="ScatterPlot4"></div>
+<div id="DonutChart"></div>
+<div id="GroupedBarCharts"></div>
+<div id="RadarChart"></div>
 
 <script type="text/javascript">
   var spec1 = "Assignment2/World_Map.json";
@@ -37,6 +40,18 @@
 
   var spec2 = "Assignment2/Scatter_Plot4.json";
   vegaEmbed('#ScatterPlot4', spec2).then(function(result) {
+  }).catch(console.error);
+
+  var spec2 = "Assignment2/Donut_Chart.json";
+  vegaEmbed('#DonutChart', spec2).then(function(result) {
+  }).catch(console.error);
+  
+  var spec2 = "Assignment2/Grouped_Bar_Charts.json";
+  vegaEmbed('#GroupedBarCharts', spec2).then(function(result) {
+  }).catch(console.error);
+
+  var spec2 = "Assignment2/Radar_Chart.json";
+  vegaEmbed('#RadarChart', spec2).then(function(result) {
   }).catch(console.error);
 </script>
 

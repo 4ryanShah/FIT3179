@@ -1,0 +1,99 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "description": "Grouped bar charts displaying averages by continent.",
+  "data": {
+    "url": "Assignment2/world-data-2023-aryan.csv"
+  },
+  "hconcat": [
+    {
+      "mark": "bar",
+      "encoding": {
+        "x": {"field": "Continent", "type": "nominal", "axis": {"labelAngle": -45}},
+        "y": {"aggregate": "average", "field": "Infant mortality", "type": "quantitative"},
+        "color": {
+          "field": "Continent",
+          "type": "nominal",
+          "scale": {
+          "domain": [
+          "North America",
+          "South America",
+          "Europe",
+          "Africa",
+          "Asia",
+          "Oceania"
+          ],
+          "range": [
+          "#e41a1c",
+          "#984ea3",
+          "#ff7f00",
+          "#33a02c",
+          "#377eb8",
+          "#a65628"
+          ]
+          }
+          }
+      },
+      "title": "Infant Mortality by Continent"
+    },
+    {
+      "mark": "bar",
+      "encoding": {
+        "x": {"field": "Continent", "type": "nominal", "axis": {"labelAngle": -45}},
+        "y": {"aggregate": "average", "field": "Gross primary education enrollment (%)", "type": "quantitative", "scale": {"domain": [1, 1.07], "zero": false}},
+        "color": {
+          "field": "Continent",
+          "type": "nominal",
+          "scale": {
+          "domain": [
+          "North America",
+          "South America",
+          "Europe",
+          "Africa",
+          "Asia",
+          "Oceania"
+          ],
+          "range": [
+          "#e41a1c",
+          "#984ea3",
+          "#ff7f00",
+          "#33a02c",
+          "#377eb8",
+          "#a65628"
+          ]
+          }
+          }
+      },
+      "title": "Gross Primary Education Enrollment (%) by Continent"
+    },
+    {
+      "mark": "bar",
+      "encoding": {
+        "x": {"field": "Continent", "type": "nominal", "axis": {"labelAngle": -45}},
+        "y": {"aggregate": "average", "field": "Fertility Rate", "type": "quantitative"},
+        "color": {
+          "field": "Continent",
+          "type": "nominal",
+          "scale": {
+          "domain": [
+          "North America",
+          "South America",
+          "Europe",
+          "Africa",
+          "Asia",
+          "Oceania"
+          ],
+          "range": [
+          "#e41a1c",
+          "#984ea3",
+          "#ff7f00",
+          "#33a02c",
+          "#377eb8",
+          "#a65628"
+          ]
+          }
+          }
+      },
+      "title": "Fertility Rate by Continent"
+    }
+  ]
+}
