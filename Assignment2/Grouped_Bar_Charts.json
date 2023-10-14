@@ -9,6 +9,49 @@
       "mark": "bar",
       "encoding": {
         "x": {"field": "Continent", "type": "nominal", "axis": {"labelAngle": -45}},
+        "y": {"aggregate": "average", "field": "Life expectancy", "type": "quantitative", "scale": {"domain": [20, 90], "zero": false}},
+        "color": {
+          "field": "Continent",
+          "type": "nominal",
+          "scale": {
+          "domain": [
+          "North America",
+          "South America",
+          "Europe",
+          "Africa",
+          "Asia",
+          "Oceania"
+          ],
+          "range": [
+          "#e41a1c",
+          "#984ea3",
+          "#ff7f00",
+          "#33a02c",
+          "#377eb8",
+          "#a65628"
+          ]
+          }
+          },
+          "tooltip": [
+            {
+              "field": "Continent",
+              "type": "nominal",
+              "title": "Continent"
+            },
+            {
+              "aggregate": "average",
+              "field": "Life expectancy",
+              "type": "quantitative",
+              "title": "Average Life Expectancy"
+            }
+          ]
+      },
+      "title": "Life Expectancy by Continent"
+    },
+    {
+      "mark": "bar",
+      "encoding": {
+        "x": {"field": "Continent", "type": "nominal", "axis": {"labelAngle": -45}},
         "y": {"aggregate": "average", "field": "Infant mortality", "type": "quantitative"},
         "color": {
           "field": "Continent",
@@ -31,7 +74,20 @@
           "#a65628"
           ]
           }
-          }
+          },
+          "tooltip": [
+            {
+              "field": "Continent",
+              "type": "nominal",
+              "title": "Continent"
+            },
+            {
+              "aggregate": "average",
+              "field": "Infant mortality",
+              "type": "quantitative",
+              "title": "Average Infant mortality"
+            }
+          ]
       },
       "title": "Infant Mortality by Continent"
     },
@@ -61,7 +117,20 @@
           "#a65628"
           ]
           }
-          }
+          },
+          "tooltip": [
+            {
+              "field": "Continent",
+              "type": "nominal",
+              "title": "Continent"
+            },
+            {
+              "aggregate": "average",
+              "field": "Gross primary education enrollment (%)",
+              "type": "quantitative",
+              "title": "Average Gross primary education enrollment (%)"
+            }
+          ]
       },
       "title": "Gross Primary Education Enrollment (%) by Continent"
     },
@@ -91,7 +160,20 @@
           "#a65628"
           ]
           }
-          }
+          },
+          "tooltip": [
+            {
+              "field": "Continent",
+              "type": "nominal",
+              "title": "Continent"
+            },
+            {
+              "aggregate": "average",
+              "field": "Fertility Rate",
+              "type": "quantitative",
+              "title": "Average Fertility Rate"
+            }
+          ]
       },
       "title": "Fertility Rate by Continent"
     }

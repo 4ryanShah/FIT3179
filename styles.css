@@ -1,0 +1,44 @@
+/* styles.css */
+
+/* Set the base styling for chart containers */
+.chart-container {
+	margin: 20px;
+	border: 1px solid #ccc;
+	padding: 10px;
+	box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+  }
+  
+  /* Style the World Map container */
+  #WorldMap {
+	width: 100%;
+	height: 400px;
+  }
+  
+  /* Style the Scatter Plot containers */
+  #ScatterPlot,
+  #ScatterPlot2,
+  #ScatterPlot3,
+  #ScatterPlot4 {
+	width: 50%;
+	height: 300px;
+	float: left;
+  }
+  
+  /* Style the Donut Chart container */
+  #DonutChart {
+	width: 100%;
+	height: 400px;
+  }
+  
+  /* Style the Grouped Bar Charts container */
+  #GroupedBarCharts {
+	width: 100%;
+	height: 400px;
+  }
+  
+  /* Style the Radar Chart container */
+  #RadarChart {
+	width: 100%;
+	height: 400px;
+  }
+  
