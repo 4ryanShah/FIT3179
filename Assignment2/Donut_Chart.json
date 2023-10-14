@@ -1,5 +1,7 @@
 {
     "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+    "width": 250,
+    "height": 250,
     "description": "Donut chart grouped by continent with GDP as the value.",
     "data": {
       "url": "Assignment2/world-data-2023-aryan.csv"

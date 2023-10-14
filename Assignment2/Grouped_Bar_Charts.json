@@ -1,5 +1,6 @@
 {
   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  
   "description": "Grouped bar charts displaying averages by continent.",
   "data": {
     "url": "Assignment2/world-data-2023-aryan.csv"
@@ -7,6 +8,8 @@
   "hconcat": [
     {
       "mark": "bar",
+      "width": 100,
+      "height": 180,
       "encoding": {
         "x": {"field": "Continent", "type": "nominal", "axis": {"labelAngle": -45}},
         "y": {"aggregate": "average", "field": "Life expectancy", "type": "quantitative", "scale": {"domain": [20, 90], "zero": false}},
@@ -50,6 +53,8 @@
     },
     {
       "mark": "bar",
+      "width": 100,
+      "height": 180,
       "encoding": {
         "x": {"field": "Continent", "type": "nominal", "axis": {"labelAngle": -45}},
         "y": {"aggregate": "average", "field": "Infant mortality", "type": "quantitative"},
@@ -93,6 +98,8 @@
     },
     {
       "mark": "bar",
+      "width": 100,
+      "height": 180,
       "encoding": {
         "x": {"field": "Continent", "type": "nominal", "axis": {"labelAngle": -45}},
         "y": {"aggregate": "average", "field": "Gross primary education enrollment (%)", "type": "quantitative", "scale": {"domain": [0.8, 1.1], "zero": false}},
@@ -136,6 +143,8 @@
     },
     {
       "mark": "bar",
+      "width": 100,
+      "height": 180,
       "encoding": {
         "x": {"field": "Continent", "type": "nominal", "axis": {"labelAngle": -45}},
         "y": {"aggregate": "average", "field": "Fertility Rate", "type": "quantitative"},
