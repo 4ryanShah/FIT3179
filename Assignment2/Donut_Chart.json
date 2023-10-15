@@ -4,7 +4,7 @@
     "height": 250,
     "description": "Donut chart grouped by continent with GDP as the value.",
     "data": {
-      "url": "Assignment2/world-data-2023-aryan.csv"
+      "url": "https://raw.githubusercontent.com/4ryanShah/FIT3179/main/Assignment2/world-data-2023-aryan.csv"
     },
     "selection": {
       "continent_highlight": {
