@@ -12,7 +12,7 @@
       "height": 180,
       "encoding": {
         "x": {"field": "Continent", "type": "nominal", "axis": {"labelAngle": -45}},
-        "y": {"aggregate": "average", "field": "Life expectancy", "type": "quantitative", "scale": {"domain": [20, 90], "zero": false}},
+        "y": {"aggregate": "average", "field": "Life expectancy", "type": "quantitative", "scale": {"domain": [20, 90], "zero": false}, "title": null},
         "color": {
           "field": "Continent",
           "type": "nominal",
@@ -57,7 +57,7 @@
       "height": 180,
       "encoding": {
         "x": {"field": "Continent", "type": "nominal", "axis": {"labelAngle": -45}},
-        "y": {"aggregate": "average", "field": "Infant mortality", "type": "quantitative"},
+        "y": {"aggregate": "average", "field": "Infant mortality", "type": "quantitative", "scale": {"domain": [0, 50], "zero": false}, "title": null},
         "color": {
           "field": "Continent",
           "type": "nominal",
@@ -102,7 +102,7 @@
       "height": 180,
       "encoding": {
         "x": {"field": "Continent", "type": "nominal", "axis": {"labelAngle": -45}},
-        "y": {"aggregate": "average", "field": "Gross primary education enrollment (%)", "type": "quantitative", "scale": {"domain": [0.8, 1.1], "zero": false}},
+        "y": {"aggregate": "average", "field": "Gross primary education enrollment (%)", "type": "quantitative", "scale": {"domain": [0.8, 1.1], "zero": false}, "title": null},
         "color": {
           "field": "Continent",
           "type": "nominal",
@@ -147,7 +147,7 @@
       "height": 180,
       "encoding": {
         "x": {"field": "Continent", "type": "nominal", "axis": {"labelAngle": -45}},
-        "y": {"aggregate": "average", "field": "Fertility Rate", "type": "quantitative"},
+        "y": {"aggregate": "average", "field": "Fertility Rate", "type": "quantitative", "scale": {"domain": [0, 5], "zero": false}, "title": null},
         "color": {
           "field": "Continent",
           "type": "nominal",
