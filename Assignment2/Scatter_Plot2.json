@@ -81,5 +81,8 @@
         {"field": "Unemployment rate", "type": "quantitative", "title": "Unemployment rate"},
         {"field": "Out of pocket health expenditure", "type": "quantitative", "title": "Out of pocket health expenditure"}
       ]
+    },
+    "config": {
+      "background": "#c8b0eb"
     }
 }

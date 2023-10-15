@@ -9,7 +9,7 @@
   },
   "params": [{
     "name": "zoom_level",
-    "value": 130,
+    "value": 160,
     "bind": {
     "input": "range",
     "min": 100,
@@ -97,5 +97,8 @@
       },
       "mark": { "type": "geoshape", "fill": null, "stroke": "lightgray" }
     }
-  ]
+  ],
+  "config": {
+    "background": "#c8b0eb"
+  }
 }

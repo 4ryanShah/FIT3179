@@ -186,5 +186,8 @@
       },
       "title": "Fertility Rate by Continent"
     }
-  ]
+  ],
+  "config": {
+    "background": "#c8b0eb"
+  }
 }
